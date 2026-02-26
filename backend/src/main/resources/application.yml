@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: mybuddy-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybuddy?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+aliyun:
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    access-key: your-access-key
+    secret-key: your-secret-key
+    bucket: your-bucket
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: logs/mybuddy-backend.log
